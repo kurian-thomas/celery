@@ -20,6 +20,9 @@ This repository contains the code for scraping book details from flipkart in a s
     
 1. #### Install the requirements
     > pip install -r requirements.txt
+    > pip install celery
+    > pip install scrapy 
+    > pip install redis
 
 1. #### Install redis if not installed and make sure it is running in port number 6379
     > sudo apt-get install redis
