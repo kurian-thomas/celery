@@ -45,11 +45,11 @@ This repository contains the code for scraping book details from flipkart in a s
 
 1. ### Output screenshots
 
-![alt text](https://raw.githubusercontent.com/kurian-thomas/celery/blob/master/screenshots/screenshot1.png)
+![alt text](https://github.com/kurian-thomas/celery/blob/master/screenshots/screenshot1.png)
 
-![alt text](https://raw.githubusercontent.com/kurian-thomas/celery/blob/master/screenshots/screenshot2.png)
+![alt text](https://github.com/kurian-thomas/celery/blob/master/screenshots/screenshot2.png)
 
-![alt text](https://raw.githubusercontent.com/kurian-thomas/celery/blob/master/screenshots/screenshot3.png)         
+![alt text](https://github.com/kurian-thomas/celery/blob/master/screenshots/screenshot3.png)         
 
 
 
