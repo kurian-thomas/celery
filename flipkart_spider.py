@@ -9,6 +9,17 @@ class AmazonSpider(scrapy.Spider):
 	'https://www.flipkart.com/books/educational-and-professional-books/computers-internet-books/pr?sid=bks%2Cenp%2Cwum&q=books&p%5B%5D=facets.serviceability%5B%5D%3Dtrue&otracker=categorytree%27&sort=relevance&page=1'
 	]
 
+	custom_settings={
+		'PROXY_POOL_ENABLED':'True',
+		'DOWNLOADER_MIDDLEWARES':{
+	    	# ...
+    		'scrapy_proxy_pool.middlewares.ProxyPoolMiddleware': 610,
+    		'scrapy_proxy_pool.middlewares.BanDetectionMiddleware': 620,
+    		# ...
+			},
+		'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.93 Safari/537.36'	
+	}
+
 	def parse(self,response):
 		
 		pr_name = response.css('._2cLu-l').css('::text').extract()

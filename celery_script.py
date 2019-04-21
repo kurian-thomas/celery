@@ -14,6 +14,6 @@ def celery_beat_crawler():
 app.conf.beat_schedule = {
     'add-every-30-seconds': {
         'task': 'celery_script.celery_beat_crawler',
-        'schedule': timedelta(seconds=20), # 60 Seconds
+        'schedule': timedelta(minutes=10), # 60 Seconds
     },
 }
