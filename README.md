@@ -1,5 +1,5 @@
 
-# Simple Scrapy project with celery beat schedule
+# Scrapy project with celery beat schedule
 This repository contains the code for scraping book details from flipkart in a scheduled manner using user agents
 
 ## Technologies used
@@ -28,10 +28,13 @@ This repository contains the code for scraping book details from flipkart in a s
     ##### (should return PONG)
 
 1. #### Set up local database
-    >install mysql
-    > go to mysql.py and flipkart_spider.py file 
-            add username,password and database 
-    > python mysql.py 
+    install mysql
+
+    $ pip install mysqlclient
+
+    go to mysql.py and flipkart_spider.py file 
+        add your username,password and database in the empty quotes
+    $ python mysql.py 
 
 
 1. ####  Run celery with beat schedule
