@@ -20,7 +20,7 @@ class AmazonPipeline(object):
 
 	def create_table(self):
 		self.curr.execute("""DROP TABLE IF EXISTS FLIP""")
-		self.curr.execute("""CREATE TABLE FLIP(title varchar(200) PRIMARY KEY,tags varchar(500),price varchar(100),link varchar(2000))""")
+		self.curr.execute("""CREATE TABLE FLI(title varchar(200) PRIMARY KEY,tags varchar(500),price varchar(100),link varchar(2000))""")
 
 	def process_item(self, item, spider):
 		self.store_db(item)

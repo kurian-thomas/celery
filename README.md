@@ -1,6 +1,6 @@
 
 # Simple Scrapy project with celery beat schedule
-This repository contains the code for scraping the title of my github profile in a scheduled manner
+This repository contains the code for scraping book details from flipkart in a scheduled manner using user agents
 
 ## Technologies used
 1. python3
@@ -11,7 +11,7 @@ This repository contains the code for scraping the title of my github profile in
 ## Steps for running
 
 1. #### Clone the repository
-    > git clone https://github.com/augustinetharakan12/scrapy_celery_schedule.git
+    > git clone https://github.com/kurian-thomas/celery
 
 1. #### Create a virtual environment if required
     > virtual env -p python3 env
@@ -27,7 +27,14 @@ This repository contains the code for scraping the title of my github profile in
     > $ redis-cli ping
     ##### (should return PONG)
 
+1. #### Set up local database
+    >install mysql
+    > go to mysql.py and flipkart_spider.py file 
+            add username,password and database 
+    > python mysql.py 
+
+
 1. ####  Run celery with beat schedule
     > celery -A celery_script worker --loglevel=info -B 
 
-## Steps for creating a scrapy project with celery
+
