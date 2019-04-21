@@ -1,5 +1,5 @@
 
-# Scrapy project with celery beat schedule
+# Scrapy project with Celery beat schedule
 This repository contains the code for scraping book details from flipkart in a scheduled manner using user agents
 
 ## Technologies used
