@@ -1,5 +1,5 @@
 import MySQLdb
-con=MySQLdb.connect(host ='localhost',user='root',password='123456789',database='scrapy')
+con=MySQLdb.connect(host ='localhost',user='',password='',database='')
 cur=con.cursor()
 
 cur.execute('DROP TABLE IF EXISTS FLIP')

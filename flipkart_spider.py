@@ -18,7 +18,7 @@ class AmazonSpider(scrapy.Spider):
 		
 		for i in range(len(pr_name)):
 
-			con=MySQLdb.connect(host ='localhost',user='root',password='123456789',database='scrapy')
+			con=MySQLdb.connect(host ='localhost',user='',password='',database='')
 			cur=con.cursor()
 			cur.execute("INSERT INTO FLIP values('{}','{}','{}','{}')".format(pr_name[i].replace("'",""),pr_tag[i].replace("'"," "),pr_price[i].replace("₹",""),pr_imagelink[i]))
 			con.commit()
