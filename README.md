@@ -51,6 +51,9 @@ Innitial start up
 Scraping and adding items to database
 ![alt text](https://github.com/kurian-thomas/celery/blob/master/screenshots/screenshot2.png)
 
+Proxy rotating 
+![alt text](https://github.com/kurian-thomas/celery/blob/master/screenshots/screenshot4.png)
+
 Database state 
 ![alt text](https://github.com/kurian-thomas/celery/blob/master/screenshots/screenshot3.png)         
 
